@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login PHP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="shortcut icon" href="img/barca.png" type="image/x-icon">
+    <style>
+        body{
+            background-image: url(img/barca.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenedor {
+            width: 40%;
+            background-color: rgba(255, 255, 255, 0.375);
+            border-radius: 5px;
+            backdrop-filter: blur(5px);
+            margin-top: 15%;
+            transition: all 1s;
+        }
+        .contenedor:hover{
+            transform: scale(1.2);
+        }
+        .login{
+            text-shadow: 2px 5px 2px rgb(192, 91, 108);
+            font-size: 100px;
+        }
+        button{
+            width: 50%;
+            height: 10%;
+        }
+        @media screen and (max-width:990px){
+            .login{
+                font-size: 50px;
+            }
+        }
+        @media screen and (max-width:520px){
+            .login{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5 ">
+        <div class="container mx-auto contenedor text-center d-flex justify-content-center align-items-center">
+            <form class=" container mt-3" name="formulario" id="formulario" method="POST" action="formulario.php">
+                <div class="form-outline mx-auto mb-4">
+                    <h1 class="container login text-center text-white">LOGIN</h1>
+                </div>
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                    <input type="text" name="Usuario" id="usuario" class="form-control" placeholder="Nombre Usuario" />
+                    
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password"/>
+                    
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+                    <label class="form-check-label" for="form5Example3">
+                        He leído y acepto los términos
+                    </label>
+                </div>
+
+                <!-- Submit button -->
+                <button id="enviar" type="submit" class=" btn btn-primary btn-block mb-4">Iniciar</button>
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
